@@ -342,6 +342,7 @@ class AgenteTecnico:
 
 ```python
 from typing import Dict
+from datetime import datetime
 from .triagem import AgenteTriagem
 from .tecnico import AgenteTecnico
 from .comercial import AgenteComercial

@@ -231,7 +231,7 @@ class GestorSessoes:
         self.sessoes = {
             sid: sessao
             for sid, sessao in self.sessoes.items()
-            if (agora - sessao["criado_em"]).hours < max_idade_horas
+            if (agora - sessao["criado_em"]).total_seconds() / 3600 < max_idade_horas
         }
 ```
 
